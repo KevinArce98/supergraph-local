@@ -1,0 +1,42 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": [
+    "prettier",
+    "jest"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "camelcase": "off",
+    "no-promise-executor-return": "warn",
+    "valid-typeof": "warn",
+    "max-classes-per-file": "warn",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-shadow": "off",
+    "dot-notation": "off"
+  }
+}
