@@ -31,7 +31,7 @@ once it's done you run your supergraph with `yarn start` and it will run on this
 
 <h3>Prerequisites</h3>
 
-- NodeJS v16.20.2
+- NodeJS v20.19.0
 - Yarn
 
 <h3>Cloning</h3>
