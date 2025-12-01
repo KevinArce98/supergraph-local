@@ -19,6 +19,8 @@ export const startServer = async (port: number) => {
       subgraphs: [
         { name: 'store', url: 'http://localhost:4001/graphql' },
         { name: 'location', url: 'http://localhost:4002/graphql' },
+        { name: 'item', url: 'http://localhost:4003/graphql' },
+        
       ],
       subgraphHealthCheck: true,
     }),
