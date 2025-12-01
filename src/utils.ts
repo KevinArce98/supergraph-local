@@ -1,4 +1,4 @@
-import jwt_decode from 'jwt-decode';
+import { jwtDecode } from "jwt-decode";
 
 export const getToken = (authorization: string) => {
   if (!authorization) {
@@ -14,6 +14,6 @@ export const getUserId = (authorization: string) => {
     return null;
   }
 
-  const decoded: any = jwt_decode(token);
+  const decoded: any = jwtDecode(token);
   return decoded.name;
 };

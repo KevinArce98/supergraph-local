@@ -3,7 +3,7 @@ import express from 'express';
 import http from 'http';
 import responseCachePlugin from '@apollo/server-plugin-response-cache';
 import { ApolloGateway, IntrospectAndCompose } from '@apollo/gateway';
-import { expressMiddleware } from '@apollo/server/express4';
+import { expressMiddleware } from '@as-integrations/express5';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import AuthenticatedDataSource from './authenticatedData';
