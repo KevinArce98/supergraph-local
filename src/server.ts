@@ -17,9 +17,10 @@ export const startServer = async (port: number) => {
     buildService: ({ url }) => new AuthenticatedDataSource({ url }),
     supergraphSdl: new IntrospectAndCompose({
       subgraphs: [
-        { name: 'purchase-order', url: 'http://localhost:4001/graphql' },
         { name: 'item', url: 'http://localhost:4003/graphql' },
-        
+        { name: 'location', url: 'http://localhost:4002/graphql' },
+        { name: 'store', url: 'http://localhost:4001/graphql' },
+        { name: 'price', url: 'http://localhost:4004/graphql' },
       ],
       subgraphHealthCheck: true,
     }),
